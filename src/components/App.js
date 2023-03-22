@@ -2,11 +2,13 @@ import { useState } from "react";
 import React from "react";
 import './../styles/App.css';
 
+
+
 const CalC = () => {
   const [numInput, setNumInputs]=useState([]);//state var
   const [sum, setSum]=useState(0);
 
-  cosnt handleChange=(e)=>{
+  const handleChange=(e)=>{
     const inputValue=e.target.value;
     setNumInputs([...numInput, inputValue]);
   }
@@ -27,6 +29,6 @@ setTimeout(() => {
         {/* Do not remove the main div */}
     </div>
   )
-}
+};
 
 export default CalC;
